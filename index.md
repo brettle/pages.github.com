@@ -124,3 +124,9 @@ Custom 404 Pages
 If you provide a `404.html` file in the root of your repo, it will be served instead of the default 404 page.  Note that Jekyll-generated pages will not work, it <i>must</i> be an html file.
 
 Real World Example: [http://github.com/tekkub/tekkub.github.com/blob/master/404.html](http://github.com/tekkub/tekkub.github.com/blob/master/404.html) &rarr; [http://tekkub.net/404.html](http://tekkub.net/404.html).
+
+Submodules
+==========
+
+If your repo contains [submodules](http://book.git-scm.com/5_submodules.html), they will be automatically pulled but <i>only</i> if you use the Git Read-Only URL (e.g. `git://github.com/user/project`) to reference them.  A read-only HTTP URL (e.g. `https://github.com/user/project`) or a read-write URL will cause "Page build failure" with reason "submodule fetch failed".
+
